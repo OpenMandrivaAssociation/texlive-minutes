@@ -1,3 +1,9 @@
+# revision 16350
+# category Package
+# catalog-ctan /macros/latex/contrib/minutes
+# catalog-date 2009-12-05 12:31:44 +0100
+# catalog-license other-free
+# catalog-version 1.8d
 Name:		texlive-minutes
 Version:	1.8d
 Release:	1
@@ -57,6 +63,7 @@ available.
 #- source
 %doc %{_texmfdistdir}/source/latex/minutes/minutes.dtx
 %doc %{_texmfdistdir}/source/latex/minutes/minutes.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -67,3 +74,5 @@ available.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
