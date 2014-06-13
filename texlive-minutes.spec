@@ -6,7 +6,7 @@
 # catalog-version 1.8d
 Name:		texlive-minutes
 Version:	1.8d
-Release:	6
+Release:	7
 Summary:	Typeset the minutes of meetings
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minutes
