@@ -1,12 +1,6 @@
-# revision 16350
-# category Package
-# catalog-ctan /macros/latex/contrib/minutes
-# catalog-date 2009-12-05 12:31:44 +0100
-# catalog-license other-free
-# catalog-version 1.8d
 Name:		texlive-minutes
-Version:	1.8d
-Release:	10
+Version:	1.8f
+Release:	1
 Summary:	Typeset the minutes of meetings
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minutes
@@ -40,19 +34,10 @@ available.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/minutes/minutes.sty
-%doc %{_texmfdistdir}/doc/latex/minutes/MinStyGd.tex
-%doc %{_texmfdistdir}/doc/latex/minutes/Overview.tex
-%doc %{_texmfdistdir}/doc/latex/minutes/Protokol.tex
-%doc %{_texmfdistdir}/doc/latex/minutes/README
-%doc %{_texmfdistdir}/doc/latex/minutes/Sample.tex
-%doc %{_texmfdistdir}/doc/latex/minutes/SampleDE.tex
-%doc %{_texmfdistdir}/doc/latex/minutes/SampleEN.tex
-%doc %{_texmfdistdir}/doc/latex/minutes/SampleNL.tex
-%doc %{_texmfdistdir}/doc/latex/minutes/minutes.pdf
+%{_texmfdistdir}/tex/latex/minutes
+%doc %{_texmfdistdir}/doc/latex/minutes
 #- source
-%doc %{_texmfdistdir}/source/latex/minutes/minutes.dtx
-%doc %{_texmfdistdir}/source/latex/minutes/minutes.ins
+%doc %{_texmfdistdir}/source/latex/minutes
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,17 +48,3 @@ available.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.8d-2
-+ Revision: 754015
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.8d-1
-+ Revision: 719040
-- texlive-minutes
-- texlive-minutes
-- texlive-minutes
-- texlive-minutes
-
