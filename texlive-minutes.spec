@@ -3,7 +3,7 @@ Version:	42186
 Release:	2
 Summary:	Typeset the minutes of meetings
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minutes
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/minutes
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minutes.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minutes.doc.r%{version}.tar.xz
